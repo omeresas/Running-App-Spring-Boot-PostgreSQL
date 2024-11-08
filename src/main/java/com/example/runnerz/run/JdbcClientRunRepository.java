@@ -6,14 +6,11 @@ import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.Assert;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Repository
 public class JdbcClientRunRepository {
-    private List<Run> runs = new ArrayList<>();
-
     private static final Logger logger = LoggerFactory.getLogger(JdbcClientRunRepository.class);
     private final JdbcClient jdbcClient;
 
